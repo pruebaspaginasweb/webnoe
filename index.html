@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Fontanería Nosotros</title>
+</head>
+
+<body>
+    <header>
+        <h1>Fontanería Nosotros</h1>
+
+        <!DOCTYPE html>
+        <html lang="es">
+        <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Easter Egg</title>
+          <style>
+            body {
+              text-align: center;
+              margin-top: 50px;
+            }
+          </style>
+        </head>
+        <body>
+        
+          <!-- ESTE SCRIPT ES UN EASTER EGG. AL PULSAR CRT+SHIFT+X APARECE UN MENSAJE.
+                AL INTRODUCIR EÑ TEXTO SAS, APARECE UN MENSAJE DE ALERTA QUE DICE "HOLA" -->
+        
+          <script>
+            // Variables para rastrear las teclas presionadas
+            let ctrlPressed = false;
+            let shiftPressed = false;
+            let xPressed = false;
+        
+            // Manejador de eventos para la pulsación de teclas
+            document.addEventListener('keydown', function(event) {
+              // Verifica si la tecla CTRL fue presionada
+              if (event.key === 'Control') {
+                ctrlPressed = true;
+              }
+        
+              // Verifica si la tecla Shift fue presionada
+              if (event.key === 'Shift') {
+                shiftPressed = true;
+              }
+        
+              // Verifica si la tecla X fue presionada
+              if (event.key === 'X') {
+                xPressed = true;
+              }
+        
+              // Verifica si se cumplen las condiciones para el "easter egg"
+              if (ctrlPressed && shiftPressed && xPressed) {
+                // Abre un cuadro de diálogo para ingresar texto
+                const userInput = prompt('Introduce la combinación "SAS":');
+        
+                // Verifica si el texto introducido es "SAS" y muestra el mensaje
+                if (userInput && userInput.toUpperCase() === 'SAS') {
+                  alert('¡Hola! Este mensaje ha salido porque has presionado crtl+shift+x');
+                }
+        
+                // Reinicia las variables de teclas presionadas
+                ctrlPressed = false;
+                shiftPressed = false;
+                xPressed = false;
+              }
+            });
+        
+            // Manejador de eventos para la liberación de teclas
+            document.addEventListener('keyup', function(event) {
+              // Reinicia las variables de teclas presionadas al liberar las teclas
+              if (event.key === 'Control') {
+                ctrlPressed = false;
+              }
+              if (event.key === 'Shift') {
+                shiftPressed = false;
+              }
+              if (event.key === 'X') {
+                xPressed = false;
+              }
+            });
+          </script>
+        </body>
+        </html>
+        
+        
+
+        
+        <nav>
+            <ul>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#trabajos">Trabajos</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="banner">
+        <h3>Bienvenido a Fontanería Nosotros. Expertos en fontanería y reparaciones.</h3>
+      
+    
+    </section>
+
+    <section id="servicios">
+        <h2>Servicios</h2>
+        <p>Ofrecemos una amplia gama de servicios de fontanería y reparaciones. ¡Contáctenos para obtener un presupuesto!</p>
+    </section>
+
+    <section id="trabajos">
+        <h2>Fotos de Nuestros Trabajos</h2>
+        <p>orem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno
+             estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) 
+             desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.
+             No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando
+              esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales 
+              contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como</p>
+              <p>orem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno
+                estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) 
+                desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.
+                No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando
+                 esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales 
+                 contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como</p>
+        <!-- Aquí puedes agregar una galería de imágenes -->
+    </section>
+
+    <section id="nosotros">
+        <h2>Quienes Somos</h2>
+        <p>Somos un equipo de fontaneros altamente calificados, comprometidos con la satisfacción del cliente.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit ad impedit quisquam repellat iusto error 
+            sed iure tempora, fugit consectetur a, nemo incidunt ullam cum ea beatae ex suscipit et?</p>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Estamos aquí para ayudarte. ¡Contáctanos para cualquier consulta o para programar un servicio!</p>
+        <!-- Puedes agregar un formulario de contacto aquí -->
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Fontanería Nosotros. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
